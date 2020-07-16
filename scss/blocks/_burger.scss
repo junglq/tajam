@@ -1,0 +1,44 @@
+.burger {
+    display: none;
+}
+
+.burger__line,
+.burger__line:before,
+.burger__line:after {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: $blue;
+}
+
+.burger__line {
+    position: relative;
+}
+
+.burger__line:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+}
+
+.burger__line:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+}
+
+.burger.active {
+    .burger__line {
+        height: 0;
+    }
+    .burger__line:after {
+        top: 0;
+        transform: rotate(45deg);
+        transition: .2s;
+    }
+    .burger__line:before {
+        top: 0;
+        transform: rotate(-45deg);
+        transition: .2s;
+    }
+}

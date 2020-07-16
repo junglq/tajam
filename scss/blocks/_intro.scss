@@ -1,0 +1,45 @@
+.intro {
+    background: #332a53 url(../img/intro.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.intro__slider {
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+.intro__item {
+    color: $white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &:focus {
+        outline: none;
+    }
+}
+
+.intro__title {
+    font-size: 32px;
+    letter-spacing: 1px;
+    &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 50px;
+        background-color: $blue;
+        margin: 30px auto;
+    }
+}
+
+.intro__text {
+    letter-spacing: .50px;
+    line-height: 1.71;
+    padding: 0 15px;
+    margin-bottom: 50px;
+}

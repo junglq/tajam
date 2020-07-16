@@ -1,0 +1,25 @@
+@import '_reset.scss';
+@import '_vars.scss';
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: $dark;
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+@import 'blocks/_burger.scss';
+@import 'blocks/_container.scss';
+@import 'blocks/_header.scss';
+@import 'blocks/_intro.scss';
+@import 'blocks/_btn.scss';
+@import '_slider.scss';
+@import 'blocks/_story.scss';
+@import 'blocks/_expertise.scss';
+@import 'blocks/_team.scss';
+@import 'blocks/_works.scss';
+@import 'blocks/_comments.scss';
+@import 'blocks/_contact.scss';
+@import 'blocks/_footer.scss';
+@import '_media.scss';

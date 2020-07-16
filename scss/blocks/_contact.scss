@@ -1,0 +1,104 @@
+.contact {
+    padding: 70px 0px;
+}
+
+.contact__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__form {
+    max-width: 460px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__title {
+    font-size: 22px;
+    color: $dark;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 0.50px;
+}
+
+.contact__input,
+.contact__area {
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.contact__area {
+    resize: none;
+    min-height: 210px;
+    height: auto;
+}
+
+.contact__logos {
+    max-width: 380px;
+    width: 50%;
+}
+
+.contact__brands {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact__brands--left,
+.contact__brands--right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    & .brands__item {
+        margin-bottom: 40px;
+        &:last-child {
+            margin: 0;
+        }
+        & img {
+            max-width: 100%;
+            display: block;
+            height: auto;
+        }
+    }
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}
