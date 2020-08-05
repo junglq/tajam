@@ -1,4 +1,4 @@
-@media (max-width:990px) {
+@media (max-width: 990px) {
     .contact__inner {
         flex-direction: column;
         align-items: center;
@@ -22,7 +22,22 @@
     }
 }
 
-@media (max-width:768px) {
+@media (orientation: landscape) and (max-width: 900px) {
+    .intro__title {
+        font-size: 28px;
+    }
+    .intro .slick-dots {
+        display: none !important;
+    }
+    .intro {
+        justify-content: flex-end;
+    }
+    .intro__slider {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
     .burger {
         display: block;
         position: relative;
@@ -35,7 +50,7 @@
         width: 100%;
         height: 100%;
         padding: 90px 20px 10px 20px;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         background-color: #524386;
         overflow: auto;
         &.active {
@@ -112,7 +127,7 @@
     }
 }
 
-@media (max-width:630px) {
+@media (max-width: 630px) {
     .footer {
         padding: 30px 0px;
     }
@@ -132,7 +147,7 @@
     }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
     .intro__title {
         font-size: 20px;
     }
@@ -182,7 +197,7 @@
     }
 }
 
-@media (max-width:375px) {
+@media (max-width: 375px) {
     .contact__brands {
         flex-direction: column;
     }
