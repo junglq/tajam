@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('.intro__slider').slick({
         infinite: true,
         adaptiveHeight: true,
@@ -11,30 +11,20 @@ $(document).ready(function() {
     });
 
 
-    $('.burger').on("click", function(event) {
+    $('.burger').on("click", function (event) {
         $('.burger,.header__menu').toggleClass("active");
         $("body").toggleClass("lock");
     })
 
     $('.comments__slider').slick({
         infinite: false,
-        adaptiveHeight: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
         dots: false,
         arrows: false,
-        asNavFor: ".comments__sliderMin",
-        initialSlide: 0,
+        autoplay: true,
     });
-
-    $('.comments__sliderMin').slick({
-        slidesToShow: 4,
-        asNavFor: ".comments__slider",
-        initialSlide: 0,
-        arrows: true
-    });
-
 
     // Fixed
     let header = $("#header");
@@ -42,14 +32,14 @@ $(document).ready(function() {
     let introH = intro.innerHeight();
     let scrollPos = $(window).scrollTop();
 
-    $(window).on("scroll resize", function() {
+    $(window).on("scroll resize", function () {
         introH = intro.innerHeight();
         scrollPos = $(this).scrollTop();
         checkscroll(scrollPos, introH);
     })
 
     function checkscroll(scrollPos, introH) {
-        if (scrollPos > introH) {
+        if (scrollPos > 1) {
             header.addClass("fixed");
         } else {
             header.removeClass("fixed");
@@ -57,11 +47,12 @@ $(document).ready(function() {
     }
 
     // Smooth 
-    $("[data-scroll]").on("click", function(event) {
+    $("[data-scroll]").on("click", function (event) {
         event.preventDefault();
         let elementId = $(this).data("scroll");
         let elementOffset = $(elementId).offset().top;
         $(".header__menu,.burger").removeClass('active');
+        $("body").removeClass('lock');
         $("html,body").animate({
             scrollTop: elementOffset - 70
         }, 1000)

@@ -38,7 +38,7 @@ ul {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #413d4b;
 }
@@ -83,13 +83,13 @@ body.lock {
 .burger.active .burger__line:after {
   top: 0;
   transform: rotate(45deg);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .burger.active .burger__line:before {
   top: 0;
   transform: rotate(-45deg);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .container {
@@ -171,11 +171,11 @@ body.lock {
   letter-spacing: 0.25px;
   font-weight: 700;
   color: #fff;
-  transition: opacity .2s ease-in;
+  transition: opacity 0.2s ease-in;
 }
 
 .header__link:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .intro {
@@ -220,7 +220,7 @@ body.lock {
 }
 
 .intro__text {
-  letter-spacing: .50px;
+  letter-spacing: 0.5px;
   line-height: 1.71;
   padding: 0 15px;
   margin-bottom: 50px;
@@ -235,7 +235,7 @@ body.lock {
   border-radius: 2px;
   border: 1px solid #00e0d0;
   text-transform: uppercase;
-  transition: color .2s linear;
+  transition: color 0.2s linear;
 }
 
 .btn:hover {
@@ -246,10 +246,6 @@ body.lock {
   outline: none;
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-/* Ограничивающая оболочка */
 .intro__slider .slick-list {
   overflow: hidden;
 }
@@ -275,23 +271,18 @@ body.lock {
   display: flex;
 }
 
-/* Слайд */
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
-/* Стрелка влево */
-/* Стрелка вправо */
-/* Стрелка не активная */
-/* Точки (булиты) */
+.comments__sliderMin .slick-list.draggable {
+  display: flex;
+  justify-content: center;
+}
+
 .intro__slider .slick-dots {
   display: flex;
   justify-content: center;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 65px;
+  bottom: 30px;
 }
 
 .intro__slider .slick-dots li {
@@ -338,12 +329,12 @@ body.lock {
 .story__title {
   font-size: 22px;
   margin-bottom: 20px;
-  letter-spacing: 0.50px;
+  letter-spacing: 0.5px;
 }
 
 .story__text {
   line-height: 1.57;
-  letter-spacing: 0.30px;
+  letter-spacing: 0.3px;
   margin-bottom: 30px;
 }
 
@@ -380,7 +371,7 @@ body.lock {
   top: 0;
   left: 0;
   background-color: #28214b;
-  opacity: .9;
+  opacity: 0.9;
   z-index: 2;
 }
 
@@ -412,7 +403,7 @@ body.lock {
 .block__title {
   font-size: 22px;
   text-transform: uppercase;
-  letter-spacing: 0.50px;
+  letter-spacing: 0.5px;
   margin-bottom: 15px;
 }
 
@@ -445,11 +436,14 @@ body.lock {
   padding: 30px 20px 40px;
 }
 
-.expertise__item.made, .expertise__item.mobile {
+.expertise__item.made,
+.expertise__item.mobile {
   border-right: none;
 }
 
-.expertise__item.search, .expertise__item.game, .expertise__item.made {
+.expertise__item.search,
+.expertise__item.game,
+.expertise__item.made {
   border-bottom: none;
 }
 
@@ -460,14 +454,14 @@ body.lock {
 
 .expertise__title {
   margin-bottom: 25px;
-  letter-spacing: 0.50px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .expertise__text {
   line-height: 1.57;
-  letter-spacing: 0.50px;
+  letter-spacing: 0.5px;
   color: #333;
 }
 
@@ -518,7 +512,7 @@ body.lock {
   color: #fff;
   margin-bottom: 5px;
   font-weight: 700;
-  letter-spacing: 0.50px;
+  letter-spacing: 0.5px;
 }
 
 .team__prof {
@@ -586,7 +580,7 @@ body.lock {
 .comments__inner {
   max-width: 770px;
   margin: 0 auto;
-  padding: 70px 0px;
+  padding: 50px 0px;
 }
 
 .comments__item {
@@ -641,13 +635,13 @@ body.lock {
   color: #413d4b;
   font-weight: 700;
   margin-bottom: 30px;
-  letter-spacing: 0.50px;
+  letter-spacing: 0.5px;
 }
 
 .contact__input,
 .contact__area {
   padding: 10px 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
@@ -774,7 +768,7 @@ textarea:focus:-ms-input-placeholder {
   padding-top: 15px;
   line-height: 1.85;
   font-size: 15px;
-  letter-spacing: 0.50px;
+  letter-spacing: 0.5px;
   color: #fff;
   margin-bottom: 25px;
   text-transform: uppercase;
@@ -844,7 +838,7 @@ textarea:focus:-ms-input-placeholder {
   position: relative;
   width: 40px;
   height: 40px;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 
 .footer__social--link:hover {
@@ -919,7 +913,7 @@ textarea:focus:-ms-input-placeholder {
     width: 100%;
     height: 100%;
     padding: 90px 20px 10px 20px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: #524386;
     overflow: auto;
   }
@@ -1016,6 +1010,20 @@ textarea:focus:-ms-input-placeholder {
   }
 }
 
+@media (orientation: landscape) and (max-width: 600px) {
+  .intro__slider .slick-dots {
+    display: none !important;
+  }
+  .intro__title {
+    margin-bottom: 20px;
+  }
+  .intro__title:after {
+    display: none !important;
+  }
+  .intro__text {
+    margin-bottom: 20px !important;
+  }
+}
 @media (max-width: 576px) {
   .intro__title {
     font-size: 20px;
